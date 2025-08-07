@@ -16,7 +16,8 @@ permissions:
   contents: write
 
 jobs:
-  goreleaser:
+  build-docker-image:
+    name: Build and push Docker image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
